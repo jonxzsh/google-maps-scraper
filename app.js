@@ -51,7 +51,7 @@ const rl = readline.createInterface({
                         cardData.push({
                             name,
                             address,
-                            phone: phoneNumber == "NONE" ? phoneNumber : `+44${phoneNumber.replaceAll(" ", "")}`,
+                            phone: phoneNumber == "NONE" ? phoneNumber : phoneNumber,
                             website,
                         });
                     } catch(e) {
